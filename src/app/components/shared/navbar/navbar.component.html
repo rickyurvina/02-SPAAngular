@@ -49,8 +49,8 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscador de Heroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+                <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-primary" type="button">Search</button>
             </form>
         </div>
     </div>

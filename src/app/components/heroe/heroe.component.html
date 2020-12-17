@@ -1,4 +1,4 @@
-<h1 class="animated fadeIn">{{heroe.nombre}} <small>fecha aparicion</small></h1>
+<h1 class="animated fadeIn">{{heroe.nombre | uppercase}} <small>({{heroe.aparicion  | date: 'yy'}})</small></h1>
 <div class="row animated fadeIn fast">
     <div class="col-md-4">
         <img src="{{heroe.img}}" class="img-fluid" [alt]="heroe.nombre">
